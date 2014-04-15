@@ -1,6 +1,6 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-gem 'rails', '3.2.12'
+gem 'rails' , '4.0.4'
 gem 'sqlite3'
 gem 'haml-rails'
 gem 'evernote_oauth'
@@ -12,10 +12,29 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'awesome_print'
 
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-end
+gem 'sass-rails' #,   '~> 3.2.3'
+gem 'coffee-rails' #, '~> 3.2.1'
+gem 'uglifier' #, '>= 1.0.3'
 
 gem 'jquery-rails'
+gem "jquery-ui-rails"
+
+gem 'thin'
+
+# interim measure, to be removed =>
+# DEPRECATION WARNING: Model based mass assignment security has been extracted
+# out of Rails into a gem. Please use the new recommended protection model for
+# params or add `protected_attributes` to your Gemfile to use the old one.
+
+gem 'protected_attributes'
+
+# remove when not required
+
+gem 'actionpack-action_caching'   #, '~>1.0.0'
+gem 'actionpack-page_caching'     #, '~>1.0.0'
+gem 'actionpack-xml_parser'       #, '~>1.0.0'
+gem 'actionview-encoded_mail_to'  #, '~>1.0.4'
+gem 'activerecord-session_store'  #, '~>0.0.1'
+gem 'activeresource'              #, '~>4.0.0.beta1'
+gem 'rails-observers'             #, '~>0.1.1'
+gem 'rails-perftest'              #, '~>0.0.2'
